@@ -1,0 +1,22 @@
+{
+  "logLevel": "warn",
+  "logInfoToStdOut": true,
+  "ignoreDiagnostics": [],
+  "include": ["**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "charset": "utf8",
+    "target": "ESNext",
+    "module": "ESNext",
+    "sourceMap": true,
+    "jsx": "react",
+    // 这里需要 jsx +tsx 混合编译 所以要关闭这个
+    // "strict": true,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    // "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "declarationDir": ".",
+    "declaration": true
+  }
+}

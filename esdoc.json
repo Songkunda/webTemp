@@ -1,0 +1,15 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "includes": ["\\.(js|jsx|vue|ts|tsx)$"],
+  "excludes": ["(bundle\\.js|export\\.js)$"],
+  "index": "./README.md",
+  "package": "./package.json",
+  "outputAST": true,
+  "plugins": [
+    { "name": "esdoc-standard-plugin" },
+    { "name": "esdoc-jsx-plugin", "option": { "enable": true } },
+    { "name": "esdoc-ecmascript-proposal-plugin", "option": { "all": true } },
+    { "name": "esdoc-react-plugin" }
+  ]
+}
